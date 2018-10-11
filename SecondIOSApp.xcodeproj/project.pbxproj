@@ -12,6 +12,7 @@
 		E7840830216F953D003860FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E784082E216F953D003860FF /* Main.storyboard */; };
 		E7840832216F9551003860FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7840831216F9551003860FF /* Assets.xcassets */; };
 		E7840835216F9551003860FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7840833216F9551003860FF /* LaunchScreen.storyboard */; };
+		E7840840216F96CE003860FF /* ColorTool2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E784083F216F96CE003860FF /* ColorTool2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E7840831216F9551003860FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7840834216F9551003860FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7840836216F9551003860FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E784083F216F96CE003860FF /* ColorTool2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTool2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		E784081E216F953C003860FF = {
 			isa = PBXGroup;
 			children = (
+				E7840842216F970E003860FF /* Model */,
 				E7840829216F953D003860FF /* SecondIOSApp */,
 				E7840828216F953D003860FF /* Products */,
 			);
@@ -54,14 +57,46 @@
 		E7840829216F953D003860FF /* SecondIOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				E784082A216F953D003860FF /* AppDelegate.swift */,
-				E784082C216F953D003860FF /* ViewController.swift */,
-				E784082E216F953D003860FF /* Main.storyboard */,
-				E7840831216F9551003860FF /* Assets.xcassets */,
-				E7840833216F9551003860FF /* LaunchScreen.storyboard */,
-				E7840836216F9551003860FF /* Info.plist */,
+				E784083C216F965A003860FF /* Rescources */,
+				E784083E216F96A7003860FF /* Controller */,
+				E784083D216F9691003860FF /* View */,
 			);
 			path = SecondIOSApp;
+			sourceTree = "<group>";
+		};
+		E784083C216F965A003860FF /* Rescources */ = {
+			isa = PBXGroup;
+			children = (
+				E784082A216F953D003860FF /* AppDelegate.swift */,
+				E7840831216F9551003860FF /* Assets.xcassets */,
+				E7840836216F9551003860FF /* Info.plist */,
+			);
+			path = Rescources;
+			sourceTree = "<group>";
+		};
+		E784083D216F9691003860FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E784082E216F953D003860FF /* Main.storyboard */,
+				E7840833216F9551003860FF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E784083E216F96A7003860FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E784082C216F953D003860FF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7840842216F970E003860FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E784083F216F96CE003860FF /* ColorTool2.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			files = (
 				E784082D216F953D003860FF /* ViewController.swift in Sources */,
 				E784082B216F953D003860FF /* AppDelegate.swift in Sources */,
+				E7840840216F96CE003860FF /* ColorTool2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +317,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SecondIOSApp/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SecondIOSApp/Rescources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +335,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SecondIOSApp/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/SecondIOSApp/Rescources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
